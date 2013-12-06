@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <!--Header-->
+    <head>
+        <meta charset="utf-8">
+        <title>Nested View Example</title>
+       
+    </head>
+    <!--Document Body-->
+    <body>
+        <div id="nested-view-region">
+            <div id="document-template">
+                <div id="toc-region" class="side-bar">
+                   
+                </div>
+               
+                <div id="document-region" class="doc-content-container">
+                   
+                </div>
+        </div>
+        <script type="text/html" id="channel-view">
+        <%= ChannelName%>
+        </script>
+
+        <script type="text/html" id="region-view">
+            <a href="#"> <%= RegionName%> </a>
+            <ul></ul>
+        </script>
+        <!--Script References-->
+        <script src="lib/jquery.js"></script>
+        <script src="lib/underscore.js"></script>
+        <script src="lib/backbone.js"></script>
+        <script src="lib/backbone.marionette.js"></script>
+        <!--View Templates-->
+    
+        <script type="text/javascript" src="app/NestedViewExercise.js"></script>
+        <script type="text/javascript" src="app/controller.js"></script>
+    </body>
+</html>
